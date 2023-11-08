@@ -10,6 +10,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.onboardingapp.navigation.NavManager
 import com.example.onboardingapp.onBoardViews.MainOnBoarding
 import com.example.onboardingapp.ui.theme.OnBoardingAppTheme
 import com.example.onboardingapp.views.SplashScreen

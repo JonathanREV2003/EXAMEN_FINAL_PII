@@ -7,6 +7,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.navigation.NavController
+import androidx.navigation.NavHostController
 import com.example.onboardingapp.R
 import com.example.onboardingapp.data.PageData
 import com.example.onboardingapp.dataStore.StoreBoarding
@@ -15,7 +16,7 @@ import com.google.accompanist.pager.rememberPagerState
 
 @OptIn(ExperimentalPagerApi::class)
 @Composable
-fun MainOnBoarding( store: StoreBoarding) {
+fun MainOnBoarding(navController: NavHostController, store: StoreBoarding) {
     val items = ArrayList<PageData>()
 
     items.add(
@@ -57,6 +58,4 @@ fun MainOnBoarding( store: StoreBoarding) {
         navController,
         store
     )
-
-
 }

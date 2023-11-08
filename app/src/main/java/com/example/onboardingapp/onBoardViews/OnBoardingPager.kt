@@ -65,7 +65,7 @@ fun OnBoardingPager(
             PagerIndicator(item.size, pagerState.currentPage)
         }
         Box(modifier = Modifier.align(Alignment.BottomCenter)) {
-            buttonFinish(pagerState.currentPage, navController, store)
+            ButtonFinish(pagerState.currentPage, navController, store)
         }
     }
 }
